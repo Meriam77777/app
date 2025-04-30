@@ -1,6 +1,6 @@
-import 'login_page.dart';
-import 'package:get/get.dart';
-import 'package:flutter/material.dart';
+import 'pages/login_page.dart';     // land to the login page
+import 'package:get/get.dart';     //getx import
+import 'package:flutter/material.dart';    // import material design
 
 class FirstPage extends StatelessWidget {
   const FirstPage({Key? key}) : super(key: key);
@@ -18,8 +18,8 @@ class FirstPage extends StatelessWidget {
             children: [
               Image.asset(
                 'assets/test.png',
-                height: 300,
-                width: 300,
+                height: 400,
+                width: 400,
                 fit: BoxFit.contain,
               ),
               const SizedBox(height: 20),
@@ -49,7 +49,8 @@ class FirstPage extends StatelessWidget {
                     Get.to(LoginPage());
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.amber[400],
+
+                    backgroundColor: Colors.purple[400],
                     padding: EdgeInsets.symmetric(vertical: 15),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
@@ -65,6 +66,7 @@ class FirstPage extends StatelessWidget {
                 ),
               ),
             ],
+
           ),
         ),
       ),
